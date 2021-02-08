@@ -1,7 +1,7 @@
 # Movie App 2021
 React JS Fundamentals Course (2021 Update!)
 <hr>
-###### setState 를 호출할 때 마다 리액트는 새로운 state와 함께 render function 호출
+ setState 를 호출할 때 마다 리액트는 새로운 state와 함께 render function 호출
 
 ```js
 class App extends React.Component {
