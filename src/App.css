@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+
+
+}
+.main{
+    position: absolute;
+    width:75%;
+    height:100vh;
+    background-color: black;
+   
+}

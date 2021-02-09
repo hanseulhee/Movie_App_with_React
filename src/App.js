@@ -29,6 +29,7 @@ class App extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
+      <div className = "main">
       <section className="container">
         {isLoading ? (
           <div className="loader">
@@ -50,6 +51,7 @@ class App extends React.Component {
           </div>
         )}
       </section>
+      </div>
     );
   }
 }

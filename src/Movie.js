@@ -5,16 +5,23 @@ const Movie = ({ year, title, summary, poster, genres }) => {
   return (
     <div className="movie">
       <div className="movie__data">
-        <img src={poster} alt={title} title={title} />
+        <div className="mainpage">
         <h3 className="movie__title">{title}</h3>
+          <img src={poster} alt={title} title={title} />
+        
+          </div>
+        <div className="pluspage">
         <h5 className="movie__year">{year}</h5>
         <ul className="genres">
           {genres.map((genre, index) => (
-            <li key={index} className="genres__genre">{genre}</li>
+            <li key={index} className="genres__genre">
+              {genre}
+            </li>
           ))}
         </ul>
         <p className="movie__summary">{summary}</p>
-        
+        </div>
+       
       </div>
     </div>
   );
