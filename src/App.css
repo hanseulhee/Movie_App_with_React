@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 html,
 body {
   margin: 0;
@@ -7,33 +7,31 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
 }
 
 .movies {
-  
   display: flex;
 
-  align-self: flex-end;
+  align-self: flex-start;
   overflow-x: scroll;
-
+  direction: rtl;
   width: 70vw;
-  
 }
 
-
-
 .movie__data {
-  padding-right: 47px;
+  position: relative;
+  padding-right: 70px;
   border-radius: 4px;
 }
 
 .movie__data > img {
+  position: relative;
   width: 220px;
   height: 255px;
   z-index: -1;
-
-
+  box-shadow: 0 9px 6px -6px black;
 }
 
 .movies::-webkit-scrollbar {
@@ -45,7 +43,7 @@ body {
   all: unset;
   border-radius: 6px;
   width: 0px;
-  background-color: rgba(99, 99, 99, 0.4);
+  background-color: rgba(99, 99, 99, 0.2);
 }
 
 .loader {
@@ -61,5 +59,30 @@ body {
 .loader__text {
   font-weight: bolder;
   font-size: 30px;
+  color: black;
 }
 
+.content {
+  all: unset;
+  
+  left: 90px;
+  width: 180px;
+ margin-top: 57%; 
+  position: absolute;
+  
+  font-family: "Noto Sans", sans-serif;
+}
+
+.content > h3{
+  all: unset;
+  font-size: 20px;
+  
+  color:rgba(255,255,255);
+  
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.content > h5{
+  color:rgba(255,255,255, 0.4);
+}

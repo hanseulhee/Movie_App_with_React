@@ -13,6 +13,7 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  
 }
 
 .navbar{
@@ -26,7 +27,7 @@
     z-index: 22;
 }
 .navbar > img{
-    width: 30px;
+    width: 60px;
     height:30px;
  margin-right: 3%;
  margin-left: 5%;
@@ -40,7 +41,7 @@
 .nav > a{
     all: unset;
  margin-right: 25%;
- color: black;
- font-size: 18px;
+ color: white;
+ font-size: 16px;
  font-family: 'Noto Sans', sans-serif;
 }
