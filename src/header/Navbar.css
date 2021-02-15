@@ -1,0 +1,45 @@
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -11;
+   
+}
+
+.background >img{
+    
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.navbar{
+    position: relative;
+   
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    z-index: 22;
+}
+.navbar > img{
+    width: 30px;
+    height:30px;
+ margin-right: 3%;
+ margin-left: 5%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav > a{
+    all: unset;
+ margin-right: 25%;
+ color: black;
+ font-size: 18px;
+}

@@ -1,8 +1,14 @@
 import React from "react";
 import axios from "axios";
 import Movie from "./Movie";
+import Header from "./header/Header";
+import Navbar from "./header/Navbar";
+
 import "./App.css";
 import "./Movie.css";
+import "./header/Header.css";
+
+import "./header/Navbar.css";
 
 class App extends React.Component {
   state = {
@@ -29,26 +35,36 @@ class App extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <div className = "main">
-      <section className="container">
-        {isLoading ? (
-          <div className="loader">
-            <span className="loader__text">Loading ...</span>
-          </div>
-        ) : (
-          <div className="movies">
-            {movies.map((movie) => (
-              <Movie
-                key={movie.id}
-                id={movie.id}
-                year={movie.year}
-                title={movie.title}
-                poster={movie.medium_cover_image}
-              />
-            ))}
-          </div>
-        )}
-      </section>
+      <div className="main">
+        <section className="container">
+          
+          {isLoading ? (
+            
+            <div className="loader">
+              <span className="loader__text">Loading ...</span>
+            </div>
+          ) : (
+
+            <div className="main">
+              <Navbar />
+            
+            <div className="title">
+        <Header />
+            <div className="movies">
+              {movies.map((movie) => (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  year={movie.year}
+                  title={movie.title}
+                  poster={movie.medium_cover_image}
+                />
+              ))}
+            </div>
+            </div>
+            </div>
+          )}
+        </section>
       </div>
     );
   }
