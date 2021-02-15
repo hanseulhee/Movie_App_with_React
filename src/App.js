@@ -9,6 +9,7 @@ import "./Movie.css";
 import "./header/Header.css";
 
 import "./header/Navbar.css";
+import Background from "./header/Background";
 
 class App extends React.Component {
   state = {
@@ -47,9 +48,11 @@ class App extends React.Component {
 
             <div className="main">
               <Navbar />
-            
+              
+              <Background />
             <div className="title">
         <Header />
+        
             <div className="movies">
               {movies.map((movie) => (
                 <Movie
@@ -63,6 +66,7 @@ class App extends React.Component {
             </div>
             </div>
             </div>
+            
           )}
         </section>
       </div>
