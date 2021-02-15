@@ -16,3 +16,21 @@
     margin-top: 8%;
     
 }
+
+
+.overview:first-of-type {
+    animation: showup 10s;
+  }
+  
+.overview:last-of-type {
+    width: 0px;
+    animation: reveal 8s;
+  
+    animation-fill-mode: forwards;
+  }
+  
+  .overview:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 9s;
+    animation-fill-mode: forwards;
+  }

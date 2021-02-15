@@ -4,7 +4,9 @@ import logo from './logo.png';
 class Navbar extends Component {
   render() {
     return (
-       
+      <div className="intro">
+        
+      <div className="calendar"></div>
         <div className="navbar">
         <img src={logo} alt="Logo" />
       <div className="nav">
@@ -15,6 +17,8 @@ class Navbar extends Component {
         <a href="#4">Contact</a>
         </div>
       </div>
+      
+      </div>      
     );
   }
 }

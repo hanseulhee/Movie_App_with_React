@@ -50,9 +50,9 @@ class App extends React.Component {
               <Navbar />
               
               <Background />
+            
             <div className="title">
         <Header />
-        
             <div className="movies">
               {movies.map((movie) => (
                 <Movie
@@ -63,9 +63,12 @@ class App extends React.Component {
                   poster={movie.medium_cover_image}
                 />
               ))}
+              
             </div>
             </div>
+
             </div>
+            
             
           )}
         </section>

@@ -8,6 +8,8 @@ class Background extends Component {
           <img src={back} alt="Background" />
       
         </div>
+
+        
       );
     }
   }

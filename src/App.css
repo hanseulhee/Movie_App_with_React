@@ -18,20 +18,25 @@ body {
   overflow-x: scroll;
   direction: rtl;
   width: 70vw;
+  
+  animation-duration: 3s;
+  animation-name: slide;
+  animation-fill-mode: forwards;
 }
 
 .movie__data {
   position: relative;
-  padding-right: 70px;
+  padding-right: 94px;
   border-radius: 4px;
 }
 
 .movie__data > img {
   position: relative;
-  width: 220px;
+  width: 210px;
   height: 255px;
   z-index: -1;
-  box-shadow: 0 9px 6px -6px black;
+  /* box-shadow: 0 9px 6px -6px black; */
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
 .movies::-webkit-scrollbar {
@@ -66,7 +71,7 @@ body {
   all: unset;
   
   left: 90px;
-  width: 180px;
+  width: 200px;
  margin-top: 57%; 
   position: absolute;
   
@@ -75,7 +80,7 @@ body {
 
 .content > h3{
   all: unset;
-  font-size: 20px;
+  font-size: 22px;
   
   color:rgba(255,255,255);
   
@@ -86,3 +91,67 @@ body {
 .content > h5{
   color:rgba(255,255,255, 0.4);
 }
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 355px;
+  }
+}
+
+@keyframes slide {
+  from {
+    width: 67%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 73%;
+  }
+}
+
+
