@@ -1,57 +1,59 @@
-.background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -11;
-   
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -11;
 }
 
-.background >img{
-    width: 100vw;
+.background > img {
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
-  
 }
 
-.navbar{
-    position: relative;
-   
-    width: 100vw;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    z-index: 22;
-}
-.navbar > img{
-    width: 60px;
-    height:30px;
- margin-right: 4%;
- margin-left: 5%;
-}
+.navbar {
+  position: relative;
 
-.nav{
-    display: flex;
-    flex-direction: row;
+  width: 100vw;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  z-index: 22;
+}
+.navbar > img {
+  width: 60px;
+  height: 30px;
+  margin-right: 4%;
+  margin-left: 5%;
 }
 
-.nav > a{
-    all: unset;
- margin-right: 25%;
- color: white;
- font-size: 16px;
- font-family: 'Noto Sans', sans-serif;
+.nav {
+  display: flex;
+  flex-direction: row;
 }
 
-.calendar {margin-left: 97%;
-    margin-top: 4%;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    border-left: 3px solid rgba(226, 226, 226, 0.5);
-    justify-content: center;
-    height:575px;
+.nav > a {
+  all: unset;
+  margin-right: 25%;
+  color: white;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
 
-  }
+.line {
+  margin-left: 97%;
+  margin-top: 4%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid rgba(226, 226, 226, 0.5);
+justify-content: flex-end;
+  height: 575px;
+}
+
+.line > span{
+    color: rgba(226, 226, 226);
+}

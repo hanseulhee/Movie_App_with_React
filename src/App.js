@@ -3,6 +3,7 @@ import axios from "axios";
 import Movie from "./Movie";
 import Header from "./header/Header";
 import Navbar from "./header/Navbar";
+import Loader from "./Loader";
 
 import "./App.css";
 import "./Movie.css";
@@ -40,10 +41,13 @@ class App extends React.Component {
         <section className="container">
           
           {isLoading ? (
-            
             <div className="loader">
+              
+            
               <span className="loader__text">Loading ...</span>
+              <Loader />
             </div>
+            
           ) : (
 
             <div className="main">

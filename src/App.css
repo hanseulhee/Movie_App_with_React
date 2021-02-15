@@ -6,7 +6,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Noto Sans", sans-serif;
   color: white;
 }
@@ -16,6 +16,7 @@ body {
 
   align-self: flex-start;
   overflow-x: scroll;
+  overflow-y: hidden;
   direction: rtl;
   width: 70vw;
   
@@ -48,7 +49,7 @@ body {
   all: unset;
   border-radius: 6px;
   width: 0px;
-  background-color: rgba(99, 99, 99, 0.2);
+  background-color: rgba(99, 99, 99, 0.025);
 }
 
 .loader {
@@ -67,12 +68,14 @@ body {
   color: black;
 }
 
+
+
 .content {
   all: unset;
   
   left: 90px;
   width: 200px;
- margin-top: 57%; 
+ margin-top: 50%; 
   position: absolute;
   
   font-family: "Noto Sans", sans-serif;
@@ -89,7 +92,7 @@ body {
 }
 
 .content > h5{
-  color:rgba(255,255,255, 0.4);
+  color:rgba(255,255,255, 0.5);
 }
 
 @keyframes showup {
@@ -122,26 +125,7 @@ body {
   }
 }
 
-@keyframes reveal {
-  0% {
-    opacity: 0;
-    width: 0px;
-  }
-  20% {
-    opacity: 1;
-    width: 0px;
-  }
-  30% {
-    width: 355px;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    width: 355px;
-  }
-}
+
 
 @keyframes slide {
   from {
@@ -153,5 +137,4 @@ body {
     width: 73%;
   }
 }
-
 

@@ -6,7 +6,7 @@ class Navbar extends Component {
     return (
       <div className="intro">
         
-      <div className="calendar"></div>
+      <div className="line"><span>01</span></div>
         <div className="navbar">
         <img src={logo} alt="Logo" />
       <div className="nav">
