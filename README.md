@@ -34,6 +34,9 @@ async await을 함으로써 getMovies function이 접근이 끝날 때 까지 �
     const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
   }
 ```
+----
+
+
 #### Deploying to Github Pages
 
 * npm i gh-pages  (gh-page 설치) 
