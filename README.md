@@ -25,7 +25,6 @@ class App extends React.Component {
     );
   }
 }
-});
 ```
 
 async await을 함으로써 getMovies function이 접근이 끝날 때 까지 기다리게 함
@@ -34,3 +33,31 @@ async await을 함으로써 getMovies function이 접근이 끝날 때 까지 �
   getMovies = async () => {
     const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
   }
+```
+###### Deploying to Github Pages
+
+* npm i gh-pages  (gh-page 설치) 
+
+- package.JSON에 homepage 추가 - 
+"homepage": "https://{깃헙 유저명}.github.io/{프로젝트 이름 (깃헙에 있는)}/"
+
+
+
++ npm run build 
+
+* script 생성 - "deploy": "gh-pages -d build", "predeploy: "npm run build"
+
+* npm run deploy
+
+
+<br>
+
+build 폴더를 얻는 법: npm run build
+
+predeploy 호출하기: npm run deploy
+
+프로젝트 이름은 소문자로만 구성, 띄어쓰기 안됨
+
+안된다면 ctrl+shift+f5 (새로고침)
+
+gh-pages 버전 에러  [gh-pages version](https://stackoverflow.com/questions/57308851/receive-error-when-deploy-to-github-pages)
