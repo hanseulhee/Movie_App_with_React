@@ -8,12 +8,13 @@ import Navigation from "./components/Navigation"
 
 
 function App(){
-  return <HashRouter>
+  return (<HashRouter>
     <Navigation />
     <Route path="/" exact={true} component={Home} />
     <Route path="/about" component={About} />
-    <Route path="/movie-detail" component={Detail} />
+    <Route path="/movie/:id" component={Detail} />
   </HashRouter>
+  );
 }
 
 export default App;

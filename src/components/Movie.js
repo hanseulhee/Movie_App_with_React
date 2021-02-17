@@ -2,16 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-function Movie({ year, title, poster }) {
+function Movie({ id, year, title, poster, summary }) {
   return (
     <Link
       to={{
-        pathname: "/movie-detail",
+        pathname: `/movie/${id}`,
         state: {
           year,
           title,
           poster,
-        },
+          summary
+        }
       }}
     >
       <div className="movie">
