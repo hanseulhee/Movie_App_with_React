@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-function Movie({ id, year, title, poster, summary }) {
+function Movie({ id, year, title, poster, summary, rating }) {
   return (
     <Link
       to={{
@@ -19,6 +19,7 @@ function Movie({ id, year, title, poster, summary }) {
         <div className="movie__data">
           <img src={poster} alt={title} title={title} />
 
+
           <div className="content">
             <h3 className="movie__title">{title}</h3>
             <h5 className="movie__year">{year}</h5>
@@ -29,6 +30,7 @@ function Movie({ id, year, title, poster, summary }) {
               </li>
             ))}
           </ul> */}
+          <span className="star" role="img"> 10 /  {rating} ⭐</span>
             <p className="movie__summary">{summary}</p> 
           </div>
         </div>
@@ -43,6 +45,7 @@ Movie.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired
   // genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

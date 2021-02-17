@@ -67,6 +67,7 @@ class Home extends React.Component {
                   poster={movie.medium_cover_image}
                   
                   summary={movie.summary}
+                  rating={movie.rating}
                 />
               ))}
               
