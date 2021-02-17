@@ -7,6 +7,7 @@ import Navbar from "../header/Navbar";
 import "./Home.css";
 import "../components/Movie.css";
 import "../header/Header.css";
+import "./About.css";
 
 import "../header/Navbar.css";
 import Background from "../header/Background";
