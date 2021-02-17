@@ -3,6 +3,7 @@ import axios from "axios";
 import Movie from "../components/Movie";
 import Header from "../header/Header";
 import Navbar from "../header/Navbar";
+import Navigation from "../components/Navigation"
 
 import "./Home.css";
 import "../components/Movie.css";
@@ -51,7 +52,7 @@ class Home extends React.Component {
 
             <div className="main">
               <Navbar />
-              
+              <Navigation />
               <Background />
             
             <div className="title">
@@ -64,6 +65,8 @@ class Home extends React.Component {
                   year={movie.year}
                   title={movie.title}
                   poster={movie.medium_cover_image}
+                  
+                  summary={movie.summary}
                 />
               ))}
               

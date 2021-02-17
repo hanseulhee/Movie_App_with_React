@@ -29,7 +29,7 @@ function Movie({ id, year, title, poster, summary }) {
               </li>
             ))}
           </ul> */}
-            {/* { <p className="movie__summary">{summary}</p> } */}
+            <p className="movie__summary">{summary}</p> 
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ Movie.propTypes = {
   id: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  // summary: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
   // genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
