@@ -42,13 +42,13 @@ async await을 함으로써 getMovies function이 접근이 끝날 때 까지 �
 * npm i gh-pages  (gh-page 설치) 
 
 - package.JSON에 homepage 추가 - 
-"homepage": "https://{깃헙 유저명}.github.io/{프로젝트 이름 (깃헙에 있는)}/"
+"homepage": "https://깃헙 유저명.github.io/프로젝트 이름 (깃헙에 있는)/"
 
 
 
 + npm run build 
 
-* script 생성 - "deploy": "gh-pages -d build", "predeploy: "npm run build"
+* script 생성 - "deploy": "gh-pages -d build", "predeploy": "npm run build"
 
 * npm run deploy
 
